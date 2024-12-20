@@ -949,7 +949,7 @@ h6 {
 }
 
 .background-section {
-  background: url("../курсач кяр/image/fon.png") no-repeat center center/cover;
+  background: url("./image/fon.png") no-repeat center center/cover;
   padding-top: 140px;
   padding-left: 250px;
 }
