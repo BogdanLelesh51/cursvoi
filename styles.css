@@ -1,48 +1,48 @@
 @charset "UTF-8";
 @font-face {
   font-family: "San Francisco Pro Text";
-  src: url("../курсач кяр/fonts/San Francisco Pro Text/SFProText-Bold.ttf")
+  src: url("./fonts/San Francisco Pro Text/SFProText-Bold.ttf")
     format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../курсач кяр/fonts/Montserrat/static/Montserrat-Bold.ttf")
+  src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf")
     format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "RoadRadio";
-  src: url("../курсач кяр/fonts/294-font.otf") format("truetype");
+  src: url("./fonts/294-font.otf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("../курсач кяр/fonts/Manrope/static/Manrope-Regular.ttf")
+  src: url("./fonts/Manrope/static/Manrope-Regular.ttf")
     format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../курсач кяр/fonts/Montserrat/static/Montserrat-Regular.ttf")
+  src: url("./fonts/Montserrat/static/Montserrat-Regular.ttf")
     format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../курсач кяр/fonts/Montserrat/static/Montserrat-Light.ttf")
+  src: url("./fonts/Montserrat/static/Montserrat-Light.ttf")
     format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("../курсач кяр/fonts/Manrope/Manrope-Light.ttf") format("truetype");
+  src: url("./fonts/Manrope/Manrope-Light.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
