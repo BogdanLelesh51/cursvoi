@@ -1,0 +1,194 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+}
+
+.return {
+  position: absolute;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  top: 5%;
+  left: 5%;
+  padding: 20px 40px;
+  border: 2px solid #ffffff;
+  border-radius: 50px; // Сделали кнопки круглыми
+  background: linear-gradient(135deg, #000, #555);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 5px 5px 20px #ff6a00, -5px -5px 20px #00d4ff;
+    background: linear-gradient(135deg, #ff6a00, #00d4ff);
+  }
+}
+
+.numberError {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  color: #ffffff;
+  margin: 0;
+  font-size: 350px;
+  letter-spacing: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    mix-blend-mode: screen; // Для более яркого эффекта
+  }
+
+  &::before {
+    color: #ff6a00;
+    animation: glitch 1s infinite;
+  }
+
+  &::after {
+    color: #00d4ff;
+    animation: glitch 1.5s infinite;
+  }
+}
+
+.notFound {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 0 30px;
+  color: #ffffff;
+  border-left: 20px solid #ff6a00;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes glitch {
+  0% {
+    top: -5px;
+    left: -5px;
+  }
+  20% {
+    top: 5px;
+    left: 5px;
+  }
+  40% {
+    top: -10px;
+    left: 10px;
+  }
+  60% {
+    top: 10px;
+    left: -10px;
+  }
+  80% {
+    top: -15px;
+    left: 15px;
+  }
+  100% {
+    top: -5px;
+    left: -5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .error {
+    font-size: 150px;
+    letter-spacing: 8px;
+  }
+
+  .notFound {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .error {
+    font-size: 100px;
+  }
+
+  .return {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+
+  .notFound {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .error {
+    height: 600px;
+    font-size: 80px;
+  }
+
+  .return {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  .return {
+    font-size: 30px;
+    padding: 25px 50px;
+  }
+
+  .error {
+    font-size: 400px;
+    letter-spacing: 15px;
+  }
+
+  .notFound {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 20px;
+  }
+
+  .return {
+    font-size: 35px;
+    padding: 30px 60px;
+  }
+
+  .error {
+    font-size: 500px;
+    letter-spacing: 20px;
+  }
+
+  .notFound {
+    font-size: 60px;
+    padding: 0 50px;
+  }
+}

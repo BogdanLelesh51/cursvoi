@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Строительный магазин</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">логотип</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Поиск по товарам, категориям и производителям"
+          />
+          <div class="search-divider"></div>
+          <div class="search-category">
+            Все категории
+            <svg
+              class="arrow-down"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <a href="./404.html">
+            <button class="search-button">
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <ul class="header-links">
+        <li>
+          <img src="./image/Vectorсравнение.png" alt="Сравнение" />
+          <span>Сравнение</span>
+        </li>
+        <li>
+          <img src="./image/Vectorизбранное.png" alt="Избранное" />
+          <span>Избранное</span>
+        </li>
+        <li>
+          <img src="./image/Vectorкорзина.png" alt="Корзина" />
+          <span>Корзина</span>
+        </li>
+      </ul>
+      <div class="contact">
+        <div class="phone">+7 (900) 547-97-97</div>
+        <div class="callback">
+          <span>
+            <img src="image/телефон.png" alt="телефон" />Заказать звонок
+            <span class="icon viber">
+              <img src="./image/svg1.jpg" alt="вайбер" />
+            </span>
+            <span class="icon whatsapp">
+              <img src="./image/svg2.jpg" alt="ватсап" />
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <span class="burger">
+          <img src="./image/бургерменю.jpg" alt="бургер" />
+          Каталог товаров
+        </span>
+        <ul>
+          <li>Акции</li>
+          <li>Виниловый сайдинг</li>
+          <li>Фасадные панели</li>
+          <li>Террасная доска ДПК</li>
+          <li>Фиброцементный сайдинг</li>
+          <li>Производители</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ВСЕ ВИДЫ САЙДИНГА</h1>
+          <p>От топовых производителей</p>
+          <a href="./404.html" class="cta-button"
+            ><span>ЗАКАЗАТЬ БЕСПЛАТНЫЙ ОБРАЗЕЦ</span></a
+          >
+        </div>
+      </section>
+      <section class="hero2">
+        <div class="container2">
+          <img src="./image/a.jpg" alt="виниловый сайдинг" />
+          <img src="./image/b.jpg" alt="фасадные панели" />
+          <img src="./image/c.jpg" alt="фасадные термопанели" />
+          <img src="./image/d.png" alt="Фиброцементный сайдинг" />
+          <img src="./image/f.jpg" alt="кровля" />
+          <img src="./image/g.jpg" alt="доска" />
+          <img src="./image/h.jpg" alt="комплектующие" />
+          <img src="./image/i.jpg" alt="утеплитель" />
+        </div>
+      </section>
+      <div class="carousel-container">
+        <h2 class="carousel-title">Хиты продаж</h2>
+        <div class="carousel-content">
+          <div class="carousel-buttons">
+            <button class="carousel-button prev">&#8249;</button>
+            <button class="carousel-button next">&#8250;</button>
+          </div>
+          <div class="carousel-images">
+            <div class="card">
+              <img src="./image/div1r.png" alt="Product Image" />
+              <div class="card-content">
+                <div class="card-title">
+                  Террасная доска из ДПК Faynag<br />Premium VELVET-
+                </div>
+                <div class="card-articul">Артикул: 1655-7</div>
+                <div class="card-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="card-price">360 ₽/пог. м</div>
+              </div>
+              <div class="card-footer">
+                <div class="counter">
+                  <button class="btn" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn" id="increment">+</button>
+                </div>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+              <div class="fast">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/div2rr.png" alt="Product Image" />
+              <div class="card-content">
+                <div class="card-title">
+                  Фасадная панель Ю-<br />Пласт Стоун Хаус Кирпич
+                </div>
+                <div class="card-articul">Артикул: 1142</div>
+                <div class="card-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="card-price">485 ₽/пог. м</div>
+              </div>
+              <div class="card-footer">
+                <div class="counter">
+                  <button class="btn" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn" id="increment">+</button>
+                </div>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+              <div class="fast">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/div3rr.png" alt="Product Image" />
+              <div class="card-content">
+                <div class="card-title">
+                  Террасная доска из ДПК Faynag Premium VELVET-
+                </div>
+                <div class="card-articul">Артикул: 1652</div>
+                <div class="card-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="card-price">360 ₽/пог. м</div>
+              </div>
+              <div class="card-footer">
+                <div class="counter">
+                  <button class="btn" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn" id="increment">+</button>
+                </div>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+              <div class="fast">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/div4rrr.png" alt="Product Image" />
+              <div class="card-content">
+                <div class="card-title">
+                  Террасная доска из ДПК<br />
+                  NanoWood Nature 3D
+                </div>
+                <div class="card-articul">Артикул: 22469</div>
+                <div class="card-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="card-price">380 ₽/пог. м</div>
+              </div>
+              <div class="card-footer">
+                <div class="counter">
+                  <button class="btn" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn" id="increment">+</button>
+                </div>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+              <div class="fast">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/div5rrr.png" alt="Product Image" />
+              <div class="card-content">
+                <div class="card-title">
+                  Фасадная панель<br />
+                  Docke, Stein, Янтарный
+                </div>
+                <div class="card-articul">Артикул: 1377</div>
+                <div class="card-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="card-price">570 ₽/пог. м</div>
+              </div>
+              <div class="card-footer">
+                <div class="counter">
+                  <button class="btn" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn" id="increment">+</button>
+                </div>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+              <div class="fast">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="prem1">
+        <div class="zagh2">
+          <h2>НАШИ</h2>
+          <h2>ПРЕИМУЩЕСТВА</h2>
+        </div>
+        <div class="lists">
+          <ul>
+            <li>► Доставка до дома</li>
+            <li>► Работаем во всех<br />регионах России</li>
+            <li>► Больше объем заказа<br />- больше скидки</li>
+          </ul>
+        </div>
+      </section>
+      <div class="carousel2-container">
+        <h2 class="carousel2-title">Новые предложения</h2>
+        <div class="carousel2-content">
+          <div class="carousel2-buttons">
+            <button class="carousel2-button prev">&#8249;</button>
+            <button class="carousel2-button next">&#8250;</button>
+          </div>
+          <div class="carousel-images2">
+            <div class="card2">
+              <img src="./image/diw1r.png" alt="Product Image" />
+              <div class="card-content2">
+                <div class="card-title2">
+                  Фасадная панель Альта-<br />Профиль Кирпич
+                </div>
+                <div class="card-articul2">Артикул: 24398</div>
+                <div class="card-rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+                <div class="card-price2">485 ₽/пог. м</div>
+              </div>
+              <div class="card-footer2">
+                <div class="counter2">
+                  <button class="btn2" id="decrement">-</button>
+                  <input type="text" id="count2" value="0" min="1" readonly />
+                  <button class="btn2" id="increment">+</button>
+                </div>
+                <button class="add-to-cart2">В корзину</button>
+              </div>
+              <div class="fast2">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./image/diw2r.png" alt="Product Image" />
+              <div class="card-content2">
+                <div class="card-title2">
+                  Термопанели Доломит<br />Кирпич 40 мм Желтый
+                </div>
+                <div class="card-articul2">Артикул: 24389</div>
+                <div class="card-rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+                <div class="card-price2">890 ₽/пог. м</div>
+              </div>
+              <div class="card-footer2">
+                <div class="counter2">
+                  <button class="btn2" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn2" id="increment">+</button>
+                </div>
+                <button class="add-to-cart2">В корзину</button>
+              </div>
+              <div class="fast2">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./image/diw3r.png" alt="Product Image" />
+              <div class="card-content2">
+                <div class="card-title2">
+                  Термоайдинг Доломит Венецианский Кирпич 40
+                </div>
+                <div class="card-articul2">Артикул: 24392</div>
+                <div class="card-rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+                <div class="card-price2">890 ₽/пог. м</div>
+              </div>
+              <div class="card-footer2">
+                <div class="counter2">
+                  <button class="btn2" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn2" id="increment">+</button>
+                </div>
+                <button class="add-to-cart2">В корзину</button>
+              </div>
+              <div class="fast2">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./image/diw4r.png" alt="Product Image" />
+              <div class="card-content2">
+                <div class="card-title2">
+                  Термопанели Доломит<br />Каньен 20 мм Рубин
+                </div>
+                <div class="card-articul2">Артикул: 24384</div>
+                <div class="card-rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+                <div class="card-price2">770 ₽/пог. м</div>
+              </div>
+              <div class="card-footer2">
+                <div class="counter2">
+                  <button class="btn2" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn2" id="increment">+</button>
+                </div>
+                <button class="add-to-cart2">В корзину</button>
+              </div>
+              <div class="fast2">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./image/diw5r.png" alt="Product Image" />
+              <div class="card-content2">
+                <div class="card-title2">
+                  Термопанели Доламит<br />Кирпич 40мм красный
+                </div>
+                <div class="card-articul2">Артикул: 24387</div>
+                <div class="card-rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+                <div class="card-price2">570 ₽/пог. м</div>
+              </div>
+              <div class="card-footer2">
+                <div class="counter2">
+                  <button class="btn2" id="decrement">-</button>
+                  <input type="text" id="count" value="0" min="1" readonly />
+                  <button class="btn2" id="increment">+</button>
+                </div>
+                <button class="add-to-cart2">В корзину</button>
+              </div>
+              <div class="fast2">
+                <button>Быстрый заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <section class="prem2">
+        <div class="prem2__contant">
+          <div class="zagh1">
+            <h2>О КОМПАНИИ</h2>
+            <h2>В ЦИФРАХ</h2>
+          </div>
+          <div class="lists1">
+            <ul>
+              <li>
+                11+
+                <h6>лет на рынке</h6>
+              </li>
+              <li>
+                1 ГОД
+                <h6>гарантии на материалы</h6>
+              </li>
+              <li>
+                2-3 ДНЯ
+                <h6>средний срок доставки</h6>
+              </li>
+              <li>
+                100%
+                <h6>довольных клиентов</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="prem3">
+        <div class="prem3__content">
+          <div class="zagh3">
+            <h2>ПОЛУЧИТЬ ВИДЕО ИНСТРУКЦИЮ</h2>
+            <h5>по замперу сайдинга</h5>
+            <a href="./404.html">
+              <button class="mybutton">ПОЛУЧИТЬ</button>
+            </a>
+          </div>
+          <div class="laptop">
+            <img
+              src="./image/MacBook Pro 16 inch Right View Mockup.png"
+              alt="ноутбук"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="prem4">
+        <div class="brends">
+          <h3 class="brend">Бренды</h3>
+          <div class="content">
+            <ul class="lists4">
+              <li><img src="./image/a11.png" alt="1" /></li>
+              <li><img src="./image/a12.png" alt="1" /></li>
+              <li><img src="./image/a13.png" alt="1" /></li>
+              <li><img src="./image/a14.png" alt="1" /></li>
+              <li><img src="./image/a15.png" alt="1" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="background-section">
+        <div class="content2">
+          <div class="listsd">
+            <div class="iconss">
+              <img class="icons" src="./image/Радиокнопка.png" alt="галочка" />
+              <p>Доставка за 2-3 дня</p>
+            </div>
+            <div class="iconss">
+              <img class="icons" src="./image/Радиокнопка.png" alt="галочка" />
+              <p>Гарантия на материалы 1 год</p>
+            </div>
+            <div class="iconss">
+              <img class="icons" src="./image/Радиокнопка.png" alt="галочка" />
+              <p>Долговечные и экологичные материалы</p>
+            </div>
+          </div>
+          <div class="form">
+            <form class="contact-form">
+              <h3>КОНТАКТЫ</h3>
+              <h2 class="h1">ОСТАВЬТЕ ЗАЯВКУ ДЛЯ</h2>
+              <h2 class="h2">РАСЧЕТА СТОИМОСТИ</h2>
+              <p>
+                Мы свяжемся для подробной<br />консультации в течение 15 минут.
+              </p>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Номер телефона"
+                  required
+                />
+              </div>
+              <a href="./404.html">
+                <button type="submit">Отправить данные</button>
+              </a>
+              <p class="privacy-policy">
+                Нажимая кнопку отправить данные, вы соглашаетесь с политикой<br />
+                обработки персональных данных.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <footer class="foot">
+        <div class="conteiner">
+          <div class="section">
+            <h3>Каталог товаров</h3>
+            <ul>
+              <li>Акции</li>
+              <li>Винные напитки</li>
+              <li>Фермерские товары</li>
+              <li>Товарная рассылка ДТК</li>
+              <li>Оформленный заказ</li>
+              <li>Федерация Тремблин</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Помощь</h3>
+            <ul>
+              <li>Оплата</li>
+              <li>Доставка</li>
+              <li>Возврат</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Мы в соц. сетях</h3>
+            <div class="socseti">
+              <img src="./image/youtube.png" alt="Icon 1" />
+              <img src="./image/vk.png" alt="Icon 2" />
+              <img src="./image/okru.png" alt="Icon 3" />
+              <img src="./image/tg.png" alt="Icon 3" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
